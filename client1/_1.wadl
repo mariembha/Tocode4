@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application xmlns="http://wadl.dev.java.net/2009/02">
+  <doc xml:lang="en" title="http://api.plos.org"/>
+  <resources base="http://api.plos.org">
+    <resource path="search" id="Search">
+      <doc xml:lang="en" title="Search"/>
+      <param name="q" default="title:&quot;Drosophila&quot; and body:&quot;RNA&quot;" type="xs:string" required="false" style="query" xmlns:xs="http://www.w3.org/2001/XMLSchema"/>
+      <param name="fl" default="id,abstract" type="xs:string" required="false" style="query" xmlns:xs="http://www.w3.org/2001/XMLSchema"/>
+      <param name="wt" default="xml" type="xs:string" required="false" style="query" xmlns:xs="http://www.w3.org/2001/XMLSchema"/>
+      <param name="indent" default="on" type="xs:string" required="false" style="query" xmlns:xs="http://www.w3.org/2001/XMLSchema"/>
+      <method name="GET" id="Search 1">
+        <doc xml:lang="en" title="Search 1"/>
+        <request/>
+        <response status="200">
+          <representation mediaType="application/xml; charset=UTF-8"/>
+        </response>
+      </method>
+    </resource>
+  </resources>
+</application>
